@@ -88,6 +88,7 @@ void Snake::gameOver(QPainter &qp)
   int h = height();
   int w = width();
 
+  qp.setPen(QColor(255, 255, 255));
   qp.translate(QPoint(w / 2, h / 2));
   qp.drawText(-textWidth / 2, 0, message);
 }
